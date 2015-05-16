@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/androidLabl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="androidprogrammingLab"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00FFFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/androidLabl"
+        android:text="NSTU"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00EEEE" 
+         
+    
+    />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:text="NewBoston"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00EEEE" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="MybringBack"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:text="TutorialsPoint"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:text="IT Ebooks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:text="JavaProgrammingLab"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:text="CsteNotes"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="FileCrop"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="22dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00eeee" />
+
+</RelativeLayout>

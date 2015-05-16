@@ -1,0 +1,7 @@
+package com.example.browser;
+
+import android.webkit.WebViewClient;
+
+public class Client extends WebViewClient {
+
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notification"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.notification.menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.notification.notification"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.example.notification.notifying"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.notifying" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.notification.mainClass"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.mainClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.notification.Alert"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.Alert" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.notification.ProgressDialoges"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.ProgressDialoges" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+         
+        <activity
+            android:name="com.example.notification.Progress"
+            android:label="@string/app_name" >
+            <intent-filter>
+            
+                <action android:name="com.example.notification.Progress" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

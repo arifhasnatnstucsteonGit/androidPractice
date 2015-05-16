@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:text="MultiAutoCompleteTextView" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/multiAutoCompleteTextView1"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:background="#DDD"
+        android:ems="10"
+        android:text="AutoCompleteTextView" />
+
+    <EditText
+        android:id="@+id/numdec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/autoCompleteTextView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/singednum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numdec"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:background="#DDD"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/singednum"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:background="#DDD"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#EEE"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/passtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:background="#DDD"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="password"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/multiline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passtwo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:background="#DDD"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/epostaladd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/multiline"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/epostaladd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:background="#DDDDDD"
+        android:ems="10"
+        android:inputType="phone" />
+
+    
+
+    <EditText
+        android:id="@+id/plain"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passtwo"
+        android:layout_alignBottom="@+id/passtwo"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:ems="10"
+        android:text="plain text" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText5"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="personal name"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

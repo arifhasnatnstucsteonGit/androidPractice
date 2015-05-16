@@ -1,0 +1,13 @@
+package com.example.graphics2d;
+
+import android.content.Context;
+import android.view.View;
+
+public class Circle2D extends View {
+
+	public Circle2D(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+
+}

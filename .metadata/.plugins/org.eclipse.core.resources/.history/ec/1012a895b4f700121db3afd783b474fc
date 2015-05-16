@@ -1,0 +1,48 @@
+package com.example.animation;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
+import android.view.Menu;
+import android.widget.ImageView;
+
+public class Animation extends Activity {
+ImageView iv;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		iv=(ImageView) findViewById(R.id.imageView1);
+		BitmapDrawable one=(BitmapDrawable) getResources().getDrawable(R.drawable.a);
+		BitmapDrawable two=(BitmapDrawable) getResources().getDrawable(R.drawable.e);
+		BitmapDrawable three=(BitmapDrawable) getResources().getDrawable(R.drawable.eight);
+		BitmapDrawable four=(BitmapDrawable) getResources().getDrawable(R.drawable.five);
+		BitmapDrawable five=(BitmapDrawable) getResources().getDrawable(R.drawable.seven);
+		BitmapDrawable six=(BitmapDrawable) getResources().getDrawable(R.drawable.six);
+		int duration=250;
+		AnimationDrawable anim=new AnimationDrawable();
+		anim.addFrame(one, duration);
+		anim.addFrame(two, duration);
+		anim.addFrame(three, duration);
+		anim.addFrame(four, duration);
+		anim.addFrame(six, duration);
+		
+		
+		
+		anim.setOneShot(false);
+		anim.start();
+		iv.setBackground(anim);
+		iv.setBackgroundColor(Color.BLACK);
+		iv.setBackgroundDrawable(anim);
+		
+		
+		
+	}
+
+
+	
+
+
+}

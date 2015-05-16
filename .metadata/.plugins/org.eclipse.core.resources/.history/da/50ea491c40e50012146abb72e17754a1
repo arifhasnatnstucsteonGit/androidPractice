@@ -1,0 +1,45 @@
+package com.example.newboston;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.FloatBuffer;
+import java.nio.ShortBuffer;
+
+public class vertices {
+	
+	private float vertices[]={
+			0f,1f,
+			1f,-1f
+			,-1f,-1f
+			
+			
+	};
+	
+	private short[] pIndex={0,1,2};
+	private FloatBuffer vertBuff;
+	private ShortBuffer pBuff;
+	   
+	public vertices(){
+		
+		ByteBuffer buff=ByteBuffer.allocateDirect(vertices.length*4);
+		buff.order(ByteOrder.nativeOrder());
+		vertBuff=buff.asFloatBuffer();
+		vertBuff.put(vertices);
+		vertBuff.position(0);
+		
+		
+		
+		ByteBuffer pbBuff=ByteBuffer.allocateDirect(pIndex.length*2);
+		pbBuff.order(ByteOrder.nativeOrder());
+		
+		pBuff=pbBuff.asShortBuffer();
+		pBuff.put(pIndex);
+		pBuff.position(0);
+		
+		
+		
+		
+	}
+	
+
+}

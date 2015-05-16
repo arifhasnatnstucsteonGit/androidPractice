@@ -1,0 +1,61 @@
+package com.example.csteclassroutinealarm;
+
+import java.util.Calendar;
+
+
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.view.Menu;
+import android.widget.Toast;
+
+public class Alarm extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_alarm);
+		Intent intent1 =new Intent(this,tune.class);
+		 PendingIntent pendingIntent1=PendingIntent.getBroadcast(this ,0, intent1,PendingIntent.FLAG_CANCEL_CURRENT);
+			
+		 Context context1=Alarm.this;
+			
+			
+			Calendar cal1=Calendar.getInstance();
+			Calendar cals=(Calendar) cal1.clone();
+			cals.add(Calendar.MINUTE, 5);
+			long cal2=cals.getTimeInMillis();
+			
+			
+		
+			
+		
+			
+			AlarmManager alarm1=(AlarmManager) context1.getSystemService(context1.ALARM_SERVICE);
+			alarm1.set(AlarmManager.RTC_WAKEUP, cal2 ,pendingIntent1);
+			
+		 
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		}
+		
+
+
+	
+
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Full Class Schedule"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="63dp"
+        android:text="SUN : 8am-9am:  CSTE-3205||-9-10am-CSTE -3211 ||10-11AM- CSTE-3209     " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="Mon: 8am-9am:  CSTE-3205 (NI)   || 11-12PM: CSTE-3211(MJH) || 12-1PM:CSTE-3209(AC)"
+        android:textColor="#800000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:text="ThuesDay: 8-9AM: CSTE-3205(NI)||9-11AM:CSTE-3210-A group-(AC/AKA)||11-1PM:CSTE3206-A(NI/IMT)   ||2-3PM: cste-3201(HK)  ||3-4PM: CSTE-3211(MJH) ||4-5PM: CSTE-3207(AKA)" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:text="WednesDay: 8-9AM: cste3201(HK) || 9-11AM-CSTE-3207(AKA)|| 12-1: CSTE-3209(AC)|| 2-5PM: CSTE-3203 (KAR)"
+        android:textColor="#800000" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="32dp"
+        android:text="ThursDay: 8-9AM: CSTE-3203 (KAR) || 9-11AM-CSTE-3202-a/b group (AKA/KAR)      11-1PM: CSTE-3208(A) AKA/MJH" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="DigitalClock"
+        android:textSize="20sp" />
+
+</RelativeLayout>

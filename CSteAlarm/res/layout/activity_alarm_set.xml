@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AlarmSet" >
+
+    <Button
+        android:id="@+id/thrusday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:text="Thursday" />
+
+    <Button
+        android:id="@+id/wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thrusday"
+        android:layout_alignLeft="@+id/thrusday"
+        android:layout_alignRight="@+id/thrusday"
+        android:text="Wednesday" />
+
+    <Button
+        android:id="@+id/thes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wed"
+        android:layout_alignLeft="@+id/wed"
+        android:layout_alignRight="@+id/wed"
+        android:text="TuesDay" />
+
+    <Button
+        android:id="@+id/mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thes"
+        android:layout_alignLeft="@+id/thes"
+        android:layout_alignRight="@+id/thes"
+        android:text="Monday" />
+
+    <Button
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mon"
+        android:layout_alignLeft="@+id/mon"
+        android:layout_alignRight="@+id/mon"
+        android:text="Sunday" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thrusday"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="74dp"
+        android:text="Arif Hasnat ||2013"
+        android:textColor="#FF0800" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sun"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Please Active Which days you wnat to get Alarm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:text="A strong step for  100% attandance"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

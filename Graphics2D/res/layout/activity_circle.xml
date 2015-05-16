@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Circle" >
+
+    <Button
+        android:id="@+id/oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Oval" />
+
+    <Button
+        android:id="@+id/shapeone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roundrect"
+        android:layout_alignParentRight="true"
+        android:text="ShapeOne" />
+
+    <Button
+        android:id="@+id/roundrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/oval"
+        android:layout_alignBottom="@+id/oval"
+        android:layout_toRightOf="@+id/path1"
+        android:text="RoundRect" />
+
+    <Button
+        android:id="@+id/arc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/oval"
+        android:layout_below="@+id/oval"
+        android:minHeight="60dp"
+        android:text="Arc" />
+
+    <Button
+        android:id="@+id/path2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/roundrect"
+        android:layout_below="@+id/roundrect"
+        android:text="Path2" />
+
+    <Button
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/path2"
+        android:layout_toRightOf="@+id/path2"
+        android:text="Rectangle" />
+
+    <Button
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/path1"
+        android:layout_alignBottom="@+id/path1"
+        android:layout_toLeftOf="@+id/rectangle"
+        android:text="path" />
+
+    <Button
+        android:id="@+id/path1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/arc"
+        android:layout_below="@+id/arc"
+        android:text=" path1" />
+
+    <Button
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/path1"
+        android:layout_toRightOf="@+id/roundrect"
+        android:text="Line" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/path1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

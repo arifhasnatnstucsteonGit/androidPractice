@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.slideshow.R.drawable"/>
+<fullyQualifiedTypeName name="android.widget.Gallery"/>
+<fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="com.example.slideshow.R.string"/>
+<fullyQualifiedTypeName name="com.example.slideshow.R.styleable"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.example.slideshow.R.id"/>
+<fullyQualifiedTypeName name="android.widget.ImageView.ScaleType"/>
+<fullyQualifiedTypeName name="android.widget.Gallery.LayoutParams"/>
+<fullyQualifiedTypeName name="com.example.slide.R.drawable"/>
+<fullyQualifiedTypeName name="com.example.slide.R.layout"/>
+<fullyQualifiedTypeName name="com.example.slide.R.dimen"/>
+</qualifiedTypeNameHistroy>

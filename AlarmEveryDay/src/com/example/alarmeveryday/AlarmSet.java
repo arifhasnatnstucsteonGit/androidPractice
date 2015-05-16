@@ -1,0 +1,214 @@
+package com.example.alarmeveryday;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class AlarmSet extends Activity {
+Button sun,mon,th,wed,thu;
+String text;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_alarm_set);
+		
+	    text="Alarm Activated!";
+		sun=(Button) findViewById(R.id.button1);
+		mon=(Button) findViewById(R.id.button2);
+		th=(Button) findViewById(R.id.button3);
+		wed=(Button) findViewById(R.id.button4);
+		thu=(Button) findViewById(R.id.button5);
+		Context context=AlarmSet.this;
+		Intent intent=new Intent (context,alarmNotification.class);
+
+		final PendingIntent pendingIntent=PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+		
+		sun.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Toast.makeText(context,text ,Toast.LENGTH_LONG).show();
+				
+				
+				
+				
+				Calendar cal=Calendar.getInstance();
+				cal.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				cal.set(Calendar.MINUTE,00);
+				cal.set(Calendar.SECOND,0);
+			
+				
+				
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.setRepeating(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),3600*1000,pendingIntent);
+		
+				int a=Calendar.HOUR_OF_DAY;
+				if(a==17){
+			alarm.cancel(pendingIntent);
+			
+			
+		}
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		mon.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				
+				
+				Context context=AlarmSet.this;
+				Toast.makeText(context,text ,Toast.LENGTH_LONG).show();
+				
+				
+				
+				//Calendar cal=new GregorianCalendar();
+				//cal.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+				//cal.set(Calendar.HOUR_OF_DAY,7);
+				//long cals=cal.getTimeInMillis();
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND, 5);
+				long cals=cal.getTimeInMillis();
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				//alarm.set(AlarmManager.RTC_WAKEUP,cals,pendingIntent);
+				alarm.setRepeating(AlarmManager.RTC_WAKEUP, cals,30*1000,pendingIntent);
+				int a=Calendar.HOUR_OF_DAY;
+				
+				
+				
+				
+			}});
+		
+		th.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Toast.makeText(context,"The class schedule of the class Thrursday (looks on Notification )" ,Toast.LENGTH_LONG).show();
+				
+				
+				
+				
+				Calendar cal=Calendar.getInstance();
+				cal.set(Calendar.DAY_OF_WEEK,Calendar.THURSDAY);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				cal.set(Calendar.MINUTE,00);
+				cal.set(Calendar.SECOND,0);
+				
+				
+				
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.setRepeating(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),3600*1000,pendingIntent);
+				int a=Calendar.HOUR_OF_DAY;
+				if(a==17){
+			alarm.cancel(pendingIntent);
+			
+			
+		}
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		wed.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Toast.makeText(context,"The class schedule of the class Wednesday (looks on Notification )" ,Toast.LENGTH_LONG).show();
+				
+				
+				
+				
+				Calendar cal=Calendar.getInstance();
+				cal.set(Calendar.DAY_OF_WEEK,Calendar.WEDNESDAY);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				cal.set(Calendar.MINUTE,00);
+				cal.set(Calendar.SECOND,0);
+				
+				
+				
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.setRepeating(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),3600*1000,pendingIntent);
+				int a=Calendar.HOUR_OF_DAY;
+				if(a==17){
+			alarm.cancel(pendingIntent);
+			
+			
+		}
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		thu.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Toast.makeText(context,"The class schedule of the class Thrusday (looks on Notification )" ,Toast.LENGTH_LONG).show();
+				
+				
+				
+				
+				Calendar cal=Calendar.getInstance();
+				cal.set(Calendar.DAY_OF_WEEK,Calendar.THURSDAY);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				cal.set(Calendar.MINUTE,00);
+				cal.set(Calendar.SECOND,0);
+				
+				
+				
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.setRepeating(AlarmManager.RTC_WAKEUP,cal.getTimeInMillis(),3600*1000,pendingIntent);
+				int a=Calendar.HOUR_OF_DAY;
+				if(a==17){
+			alarm.cancel(pendingIntent);
+			
+			
+		}
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		
+		
+		
+		
+		
+	}
+
+	
+
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground" >
+
+    <Button
+        android:id="@+id/Browser_back"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:height="5dp"
+        android:hint="Back"
+        android:text="&lt;"
+        android:width="10dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Browser_back"
+        android:layout_toLeftOf="@+id/buttonGo"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:height="40dp" />
+
+    <Button
+        android:id="@+id/BrowserForward"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_toRightOf="@+id/Browser_back"
+        android:height="5dp"
+        android:hint="Forward"
+        android:text=">"
+        android:width="10dp" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:background="#FF00EE" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/BrowserForward"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/buttonReload"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonStop"
+        android:text="Reload" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonGo"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/buttonReload"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/webView1"
+        android:src="@drawable/link" />
+
+</RelativeLayout>

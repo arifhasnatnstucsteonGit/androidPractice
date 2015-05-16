@@ -1,0 +1,19 @@
+!SESSION 2015-05-12 10:20:28.471 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2015-05-12 10:22:31.102
+!MESSAGE DDMS files not found: F:\IDEs\android sdk_tool\adt-bundle-windows-x86_64\adt-bundle-windows-x86_64\eclipse\platform-tools\adb.exe F:\IDEs\android sdk_tool\adt-bundle-windows-x86_64\adt-bundle-windows-x86_64\eclipse\tools\hprof-conv.exe F:\IDEs\android sdk_tool\adt-bundle-windows-x86_64\adt-bundle-windows-x86_64\eclipse\tools\traceview.bat 
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-05-12 10:50:00.577
+!MESSAGE Failed to load properties file for project 'Permissions'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-05-12 10:50:00.587
+!MESSAGE Failed to load properties file for project 'Permissions'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-05-12 10:50:00.777
+!MESSAGE Failed to load properties file for project 'Permissions'

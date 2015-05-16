@@ -1,0 +1,39 @@
+package com.example.alarm_on_specific_time;
+
+import java.util.Calendar;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		Intent intent=new Intent(this, specificTime.class);
+		PendingIntent pendingIntent=PendingIntent.getBroadcast(this,0 ,intent, PendingIntent.FLAG_CANCEL_CURRENT);
+		
+		
+		
+		Calendar cal=Calendar.getInstance();
+		Calendar cals=(Calendar) cal.clone();
+		Calendar cal1=(Calendar) cal.clone();
+		cals.set(2013,7,22,2,17);
+		cal1.set(2013, 7, 22, 2,18);
+		
+		
+		AlarmManager alarmManager=(AlarmManager) this.getSystemService(this.ALARM_SERVICE);
+		alarmManager.set(AlarmManager.RTC_WAKEUP, cals.getTimeInMillis(), pendingIntent);
+		
+		alarmManager.set(AlarmManager.RTC_WAKEUP,cal1.getTimeInMillis(), pendingIntent);
+		
+	}
+
+	
+
+}

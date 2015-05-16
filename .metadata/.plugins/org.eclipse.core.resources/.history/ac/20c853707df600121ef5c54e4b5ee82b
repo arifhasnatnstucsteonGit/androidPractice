@@ -1,0 +1,9 @@
+package com.example.graphics2d;
+
+public class Circle2d {
+
+	public Circle2d(Circle circle) {
+		super();
+	}
+
+}

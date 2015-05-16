@@ -1,0 +1,141 @@
+package com.example.cstealarm;
+
+import java.util.Calendar;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class AlarmSet extends Activity {
+	Button sun,mon,thes,wed,thrus;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_alarm_set);
+		
+		sun=(Button) findViewById(R.id.sun);
+		mon=(Button) findViewById(R.id.mon);
+		thes=(Button) findViewById(R.id.thes);
+		wed=(Button) findViewById(R.id.wed);
+		thrus=(Button) findViewById(R.id.thrusday);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sun.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Intent intent =new Intent(context,notify.class);
+				 PendingIntent pendingIntent=PendingIntent.getService(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND,5);
+			long cals=cal.getTimeInMillis();
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.set(AlarmManager.RTC_WAKEUP, cals, pendingIntent);
+				
+		
+				
+				
+				
+				
+			}});
+		mon.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Intent intent =new Intent(context,notify.class);
+				 PendingIntent pendingIntent=PendingIntent.getBroadcast(context ,0, intent,PendingIntent.FLAG_CANCEL_CURRENT);
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND,5);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+				
+		
+				
+				
+				
+				
+			}});
+		thes.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Intent intent =new Intent(context,notify.class);
+				 PendingIntent pendingIntent=PendingIntent.getBroadcast(context ,0, intent,PendingIntent.FLAG_CANCEL_CURRENT);
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND,5);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+				
+		
+				
+				
+				
+				
+			}});
+		wed.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Intent intent =new Intent(context,notify.class);
+				 PendingIntent pendingIntent=PendingIntent.getBroadcast(context ,0, intent,PendingIntent.FLAG_CANCEL_CURRENT);
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND,5);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+				
+		
+				
+				
+				
+				
+			}});
+		thrus.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Context context=AlarmSet.this;
+				Intent intent =new Intent(context,notify.class);
+				 PendingIntent pendingIntent=PendingIntent.getBroadcast(context ,0, intent,PendingIntent.FLAG_CANCEL_CURRENT);
+				Calendar cal=Calendar.getInstance();
+				cal.add(Calendar.SECOND,5);
+				cal.set(Calendar.HOUR_OF_DAY,8);
+				AlarmManager alarm=(AlarmManager) context.getSystemService(context.ALARM_SERVICE);
+				alarm.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+				
+		
+				
+				
+				
+				
+			}});
+		
+	}
+
+
+}

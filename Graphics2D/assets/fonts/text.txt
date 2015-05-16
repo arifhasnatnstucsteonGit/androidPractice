@@ -1,0 +1,35 @@
+When you type a: 	You get a:
+Q 	A black queen on a white square
+q 	A white queen on a white square
+W 	A black queen on a black square
+w 	A white queen on a black square
+R 	A black rook on a white square
+r 	A white rook on a white square
+T 	A black rook on a black square
+t 	A white rook on a black square
+N 	A black knight on a white square
+n 	A white knight on a white square
+M 	A black knight on a black square
+m 	A white knight on a black square
+B 	A black bishop on a white square
+b 	A white bishop on a white square
+V 	A black bishop on a black square
+v 	A white bishop on a black square
+K 	A black king on a white square
+k 	A white king on a white square
+L 	A black king on a black square
+l 	A white king on a black square
+P 	A black pawn on a white square
+p 	A white pawn on a white square
+O 	A black pawn on a black square
+o 	A white pawn on a black square
+/ 	An empty black square
+A space 	An empty white square
+1 	An upper border side
+2 	An right border side
+3 	An left border side
+4 	An lower border side
+5 	An upper left corner of the border
+6 	An upper right corner of the border
+7 	An lower left corner of the border
+8 	An lower right corner of the border

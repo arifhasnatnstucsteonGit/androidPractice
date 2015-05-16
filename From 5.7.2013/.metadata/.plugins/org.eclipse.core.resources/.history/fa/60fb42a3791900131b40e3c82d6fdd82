@@ -1,0 +1,26 @@
+package com.example.imageview_;
+
+import android.app.Activity;
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
+public class CustomAdapter extends ArrayAdapter<String>{
+
+	private final Activity context;
+	private final String[] names;
+	private final Integer[] imageIds;
+	
+public CustomAdapter(Activity context,String[] names,Integer[] imageIds){
+	super(context,R.layout.activity_main,names);
+	this.context=context;
+	this.names=names;
+	this.imageIds=imageIds;
+	
+	
+	
+	
+	
+}
+	
+	
+}

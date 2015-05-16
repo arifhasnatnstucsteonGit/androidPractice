@@ -1,0 +1,17 @@
+INDEX VERSION 1.126+F:\android Pracrice\12.09.13\.metadata\.plugins\org.eclipse.jdt.core
+559134472.index
+1327073012.index
+844012039.index
+3271309505.index
+2141143585.index
+4107803075.index
+4230744146.index
+4097727055.index
+1040904334.index
+811295406.index
+4112073882.index
+1707040004.index
+1983482571.index
+2882288677.index
+1660434961.index
+2806202195.index

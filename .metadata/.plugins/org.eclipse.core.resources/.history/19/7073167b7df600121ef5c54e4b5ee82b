@@ -1,0 +1,7 @@
+package com.example.graphics2d;
+
+import android.view.View;
+
+public class Circle2D extends View {
+
+}

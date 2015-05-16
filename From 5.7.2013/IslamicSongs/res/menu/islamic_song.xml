@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item android:id="@+id/item1" android:title="Ramjaner oi rojar seshe (simple)"></item>
+        <item android:id="@+id/item2" android:title="Ramjaner oi rojar seshe (Male)"></item>
+        <item android:id="@+id/item3" android:title="Ramjaner oi rojar seshe (Female)"></item>
+        <item android:id="@+id/item4" android:title="Ramjaner oi rojar seshe (Old)"></item>
+        <item android:id="@+id/item5" android:title="Ramjaner oi rojar seshe (Duet)"></item>
+        <item android:id="@+id/item6" android:title="Ramjaner oi rojar seshe (Remix)"></item>
+        <item android:id="@+id/item7" android:title="Ajke khusir eid eshese(Kumar sanu)"></item>
+        <item android:id="@+id/item8" android:title="Arabic Islamic song"></item>
+        <item android:id="@+id/item9" android:title="Allahu Allah (nath)"></item>
+        <item android:id="@+id/item10" android:title="Allah hu (sami yusuf)"></item>
+        <item android:id="@+id/item11" android:title="Hashbi rabbi  (sami yusuf)"></item>
+    </group>
+
+</menu>

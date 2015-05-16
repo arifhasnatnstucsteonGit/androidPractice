@@ -1,0 +1,49 @@
+package com.example.graphics2d;
+
+import android.R.color;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Typeface;
+import android.view.View;
+
+public class Circle2D extends View {
+
+	public Circle2D(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+		// TODO Auto-generated method stub
+		super.onDraw(canvas);
+	
+		canvas.drawColor(Color.GREEN);
+		
+		Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG);
+	
+		//Typeface face ;
+		
+		
+
+		paint.setColor(Color.RED);
+		paint.setTextSize(20);
+		paint.setTypeface(null);
+		paint.setFlags(Paint.UNDERLINE_TEXT_FLAG);
+		
+		
+		canvas.drawCircle(canvas.getWidth()/2,canvas.getHeight()/2, canvas.getWidth()/3, paint);
+		canvas.drawText("It is a Circle",20,20, paint);
+		
+		
+		
+		
+		
+	
+	}
+	
+	
+
+}
